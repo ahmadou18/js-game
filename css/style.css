@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  border-radius: 20px;
+  box-shadow: 6px 0px 54px rgb(0, 0, 0);
+  width: 1100px;
+  height: 650px;
+  position: relative;
+  background-image: url(../gallery/font.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.animation{
+  background-color: rgb(23, 213, 202);
+  width: 100px;
+  height: 100px;
+  border-style: none;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  animation-name: bomb;
+  animation-duration: 1.5s;
+
+}
+
+#btn{
+  transition: all .1s ease-in-out;
+
+}
+
+
+
+
+
+.animation:hover{
+  box-shadow: 0px 0px 12px rgb(114, 255, 138);
+}
+
+
+@keyframes bomb {
+  0%{
+    background-color: rgb(23, 213, 202);
+    width: 50px;
+    height: 50px;
+  }
+  50%{
+    background-color: rgb(238, 94, 13);
+    width: 60px;
+    height: 60px;
+  }
+
+  100%{
+    background-color: rgb(255, 0, 0);
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+#count{
+  color: white;
+  font-family: 'VT323', monospace;
+}
+
+#total{
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 15px;
+}
